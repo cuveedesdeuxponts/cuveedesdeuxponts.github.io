@@ -15,9 +15,12 @@
 
 
   <body>
-
+  <div class="container" style="height:300px; margin-top: 60px;">
+      <iframe src="" id="preview-pane" width="100%" height="100%"></iframe>
+  </div>
     <div class="container main-div">
-          <h1>
+        <button class="btn btn-warning" onclick="preview();" id="apercu" style="margin-top:20px;">Aperçu de la carte</button>
+          <h1 style="text-align: center">
             Carte des vins
           </h1>
           <form>
@@ -38,17 +41,17 @@
           </form>
           <form>
             <p>Cépage</p>
-            <input type="text" name="cepage" id="cepage" value="Cuvée Tradition IGP Pays d'Oc 100% Merlot et fier de l'être">
+            <textarea type="text" name="cepage" id="cepage" rows="5">Cuvée Tradition IGP Pays d'Oc 100% Merlot et fier de l'être</textarea>
           </form>
           <form>
             <p>Dégustation</p>
-            <input type="text" name="degustation" id="degustation" value="Arômes de fruits sauvages, vin de garde (5 à 7 ans), se plaît en apéro ou avec repas simples. Exprime force et fraîcheur.">
+            <textarea type="text" name="degustation" id="degustation" rows="5">Arômes de fruits sauvages, vin de garde (5 à 7 ans), se plaît en apéro ou avec repas simples. Exprime force et fraîcheur.</textarea>
           </form>
-
-         
-          <button class="button" onclick="print();" id="Recto">Recto</button>
-          <button class="button" onclick="printVerso();" id="Recto" style="margin-top:0px;">Verso</button>
           
+          <button class="button" onclick="print();" id="Recto">Impression recto</button>
+          <button class="button button-verso" onclick="printVerso();" id="Recto" style="margin-top:0px;">Impression verso</button>
+          
+
 
 
 

@@ -32,7 +32,7 @@
 
 
 body {
-	font-family: 'lmroman-caps', serif;
+	/*font-family: 'lmroman-caps', serif;*/
 }
 .main-div {
 	background-color: #eeeeee;
@@ -56,10 +56,31 @@ form p {
     text-align: center;
     text-decoration: none;
     /*display: inline-block;*/
-    font-size: 16px;
-    margin-bottom:50px;
+    font-size: 18px;
+    margin-bottom:20px;
     margin-top:30px;
     width:100%;
 }
 
+textarea {
+	width: 100%;
+}
+.button-verso {
+	background-color: #ff9E1E;
+}
 
+.button:hover {
+	opacity: 0.5;
+}
+.button-preview {
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 18px;
+    margin-bottom:20px;
+    margin-top:30px;
+    width:60px;
+}
