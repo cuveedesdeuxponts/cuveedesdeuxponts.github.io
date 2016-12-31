@@ -1,0 +1,65 @@
+@font-face {
+	font-family: "lmroman";
+	font-style: normal;
+  	font-weight: normal;
+	src: url("../font/lmroman10-regular.otf") format("opentype");
+}
+/*
+@font-face {
+	font-family: "lmroman";
+	font-style: italic;
+  	font-weight: normal;
+	src: url("../font/lmroman10-italic.otf") format("opentype");
+}
+
+
+@font-face {
+	font-family: "lmroman";
+	font-style: bold;
+  	font-weight: normal;
+	src: url("../font/lmroman10-bold.otf") format("opentype");
+}
+
+
+@font-face {
+	font-family: "lmroman-caps";
+	font-style: normal;
+  	font-weight: normal;
+	src: url("../font/lmromancaps10-regular.otf") format("opentype");
+}
+*/
+
+
+
+body {
+	font-family: 'lmroman-caps', serif;
+}
+.main-div {
+	background-color: #eeeeee;
+}
+
+input {
+	width: 100%
+}
+
+form p {
+	font-size: 20px;
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 16px;
+    margin-bottom:50px;
+    margin-top:30px;
+    width:100%;
+}
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title> E. Laurence</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="E. Laurence">
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+    <script type="text/javascript" src="./print/print.js"></script>
+  </head>
+
+
+  <body>
+
+    <div class="container main-div">
+          <h1>
+            Carte des vins
+          </h1>
+          <form>
+            <p>Titre du produit</p>
+            <input type="text" name="title" id="title" value="Cuvée Tradition 2016">
+          </form>
+          <form>
+          <p>Sous-titre du produit</p>
+            <input type="text" name="subtitle" id="subtitle" value="Merlot, IGP Pays d'Oc">
+          </form>
+          <form>
+            <p>Numéro du lot</p>
+            <input type="text" name="lot" id="lot" value="13119182">
+          </form>
+         <form>
+            <p>Prix du produit</p>
+            <input type="text" name="price" id="price" value="13.95 $">
+          </form>
+          <form>
+            <p>Cépage</p>
+            <input type="text" name="cepage" id="cepage" value="Cuvée Tradition IGP Pays d'Oc 100% Merlot et fier de l'être">
+          </form>
+          <form>
+            <p>Dégustation</p>
+            <input type="text" name="degustation" id="degustation" value="Arômes de fruits sauvages, vin de garde (5 à 7 ans), se plaît en apéro ou avec repas simples. Exprime force et fraîcheur.">
+          </form>
+
+         
+          <button class="button" onclick="print();" id="Recto">Recto</button>
+          <button class="button" onclick="printVerso();" id="Recto" style="margin-top:0px;">Verso</button>
+          
+
+
+
+
+    </div>
+  </body>
+</html>
