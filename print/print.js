@@ -5,7 +5,7 @@ function updateTextInput(val) {
     document.getElementById('textInput').innerHTML="("+val+") "+title; 
     document.getElementById('textInput').style.fontSize = val+"px";
 }
-function print() {
+function printV() {
 
 
 	// var canvas = document.getElementById("canvas");
