@@ -1,6 +1,10 @@
 
 
-
+function updateTextInput(val) {
+	var title = document.getElementById('title').value;
+    document.getElementById('textInput').innerHTML="("+val+") "+title; 
+    document.getElementById('textInput').style.fontSize = val+"px";
+}
 function print() {
 
 
@@ -26,6 +30,7 @@ function print() {
 
 
 	var title = document.getElementById('title').value;
+	var titleSize = document.getElementById('myRange').value;
 	var subtitle = document.getElementById('subtitle').value;
 	var lot = document.getElementById('lot').value;
 	var price = document.getElementById('price').value;
@@ -46,7 +51,7 @@ function print() {
 			//Add title
 			doc.setFont("times");
 			doc.setFontType("normal");
-			doc.setFontSize(18);
+			doc.setFontSize(titleSize);
 			doc.text(leftspace+0.72, topspace+0.8, title)
 
 			//Add subtitle
@@ -102,6 +107,7 @@ function preview(){
 
 
 	var title = document.getElementById('title').value;
+	var titleSize = document.getElementById('myRange').value;
 	var subtitle = document.getElementById('subtitle').value;
 	var lot = document.getElementById('lot').value;
 	var price = document.getElementById('price').value;
@@ -121,7 +127,7 @@ function preview(){
 	//Add title
 	doc.setFont("times");
 	doc.setFontType("normal");
-	doc.setFontSize(18);
+	doc.setFontSize(titleSize);
 	doc.text(leftspace+0.72, topspace+0.8, title)
 
 	//Add subtitle
@@ -165,9 +171,22 @@ function preview(){
 	var i = 0;
 	var j = 1;
 
+
 	var leftspace = marginleft + j*(3.5*fraction)
 	var topspace = margintop+i*2.0*fraction+i*marginbetween
+
+	//Add line 1
+
+
+
+	//image
 	doc.addImage(imgData2, 'PNG', leftspace, topspace, 3.5*fraction,2.0*fraction);
+
+	doc.setFillColor(200,200,200);
+	doc.rect(leftspace, 0.0, 0.01, 2.0, 'F');
+
+
+
 
 	var rectWidth = 0.04
 	//Add line 1

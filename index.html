@@ -26,6 +26,9 @@
           <form>
             <p>Titre du produit</p>
             <input type="text" name="title" id="title" value="Cuvée Tradition 2016">
+            <p>Taille de la police</p>
+            <input type="range" id="myRange" value="20" max="40" min="8" step="1" style="margin-left: 0px;" onchange="updateTextInput(this.value);">
+            <p id="textInput" style="width:100%;text-align: center">20</p>
           </form>
           <form>
           <p>Sous-titre du produit</p>
