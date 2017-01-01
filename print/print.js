@@ -217,7 +217,9 @@ function preview(){
 
 
 	var string = doc.output('datauristring');
-	$('#preview-pane').attr('src', string);
+	let preview = document.getElementById("preview-pane");
+
+	preview.src = string;
 }
 
 
